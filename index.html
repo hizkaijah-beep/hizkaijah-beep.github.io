@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>April Jay Sitoy – Operations and account management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F8;--ink:#1E2A44;--muted:#52607C;--line:#C9D3E6;--accent:#2B50F0;--gold:#B7791F;--panel:#E2E9F5;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1626;--ink:#E6ECF8;--muted:#9AA8C6;--line:#26324D;--accent:#8FA8FF;--gold:#F2C14E;--panel:#17213A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1626;--ink:#E6ECF8;--muted:#9AA8C6;--line:#26324D;--accent:#8FA8FF;--gold:#F2C14E;--panel:#17213A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.05rem;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+header.top b{font-weight:800;letter-spacing:-.02em}
+nav{display:flex;gap:22px;align-items:center}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.hero{padding:64px 0 88px;max-width:820px}
+h1{font-size:clamp(2.6rem,8vw,5.6rem);line-height:.96;letter-spacing:-.045em;font-weight:800;margin:0 0 28px}
+.lede{max-width:56ch;color:var(--muted);font-size:1.2rem;margin:0 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0F1626}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0F1626}}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;margin:0 0 32px;line-height:1.1}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 44px 32px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.yrs{color:var(--gold);font-weight:600}
+.job h3{margin:2px 0 0;font-size:1.5rem;letter-spacing:-.02em}
+.org{color:var(--muted);margin:0 0 12px}
+.job ul{margin:0;padding-left:1.1rem;color:var(--muted);max-width:68ch}
+.job li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.grid h3{margin:0 0 8px;font-size:1.1rem}
+.grid p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chips span{background:var(--panel);border-radius:999px;padding:6px 16px;font-size:.95rem}
+.edu{display:grid;gap:18px;max-width:620px}
+.edu div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.edu b{display:block}
+.edu span{color:var(--muted)}
+.edu .yrs{white-space:nowrap}
+.contact p{max-width:48ch;color:var(--muted);margin:0 0 24px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem}
+@media (max-width:640px){nav a{display:none}.edu div{flex-direction:column;gap:2px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>April Jay Sitoy</b>
+    <nav>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>I turn operations data into SLA results, without burning out the team.</h1>
+      <p class="lede">I’m an account operations team lead in Davao City. I work with Dynamics 365, Zendesk, and Power BI to give clients clear reports and to keep agent workloads sustainable. I’m building toward operational reporting and project management.</p>
+      <div class="cta">
+        <a class="btn primary" href="#experience">See my experience</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="grid">
+        <div><h3>Where I started</h3><p>I began in local government as a youth development officer, working directly with communities to find out what they needed and shaping projects around those priorities.</p></div>
+        <div><h3>Where I grew</h3><p>As an executive assistant and computer operator, I ran schedules, protected sensitive records, managed a website, and supported legislative work on ordinances and project proposals.</p></div>
+        <div><h3>Where I am now</h3><p>I lead account operations at Six Eleven. I work with sales, client accounts, and support data, and I care about reports that people can act on.</p></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="tl">
+        <article class="job">
+          <span class="yrs">2022 – 2026</span>
+          <h3>Sales Development Rep. / Account Operations Team Lead</h3>
+          <p class="org">Six Eleven Global Services and Solutions</p>
+          <ul>
+            <li>Turned raw operational data from Dynamics 365, Zendesk, and Power BI into reports that support SLA compliance and client confidence.</li>
+            <li>Managed performance by balancing agent handle times and workloads, keeping output steady while protecting team health and morale.</li>
+            <li>Managed accounts, resolved technical and payment discrepancies, and supported report and invoice generation.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <span class="yrs">2021 – 2022</span>
+          <h3>Executive Assistant / Computer Operator</h3>
+          <p class="org">LGU San Miguel</p>
+          <ul>
+            <li>Scheduled and confirmed appointments for clients and executives to keep daily operations running smoothly.</li>
+            <li>Handled sensitive information with discretion, following data protection laws and company policies.</li>
+            <li>Managed the office website: design, content, and updates.</li>
+            <li>Worked with the Legislative team on ordinances and project proposals.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <span class="yrs">2019 – 2021</span>
+          <h3>Local Youth Development Officer</h3>
+          <p class="org">LGU San Miguel</p>
+          <ul>
+            <li>Met with local communities to find their needs and match development projects to their priorities.</li>
+            <li>Managed elected officers to carry out projects and allocate funds.</li>
+            <li>Coordinated youth activities with the development team.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div><h3>Operational reporting</h3><p>Data analysis and dashboards that show how a team is performing against its targets.</p></div>
+        <div><h3>Team and account management</h3><p>Leading agents, handling client accounts, and resolving billing and technical issues.</p></div>
+        <div><h3>Process and problem solving</h3><p>Mapping process flows and fixing what slows a team down.</p></div>
+      </div>
+      <div class="chips" aria-label="Tools and strengths">
+        <span>Dynamics 365</span><span>Zendesk</span><span>Power BI</span><span>Digital marketing</span><span>Process flows</span><span>Data analysis</span>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How I work</h2>
+      <div class="grid">
+        <div><h3>Listen first</h3><p>I start by asking what people need, whether they’re community members, clients, or my own team.</p></div>
+        <div><h3>Balance numbers and people</h3><p>Targets matter, and so do workloads. I tune handle times so quality and morale hold up together.</p></div>
+        <div><h3>Report clearly</h3><p>I turn raw platform data into plain summaries that show where a team stands against its SLAs.</p></div>
+        <div><h3>Handle data with care</h3><p>I follow data protection laws and company policy, and I keep sensitive information confidential.</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <div><p style="margin:0"><b>BSED, Social Studies</b><span>St. Theresa College</span></p><span class="yrs">2021 – 2022</span></div>
+        <div><p style="margin:0"><b>AB, Political Science</b><span>Northeastern Mindanao State University</span></p><span class="yrs">2017 – 2021</span></div>
+        <div><p style="margin:0"><b>AB, History</b><span>Mindanao State University</span></p><span class="yrs">2015 – 2017</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s talk</h2>
+      <p>I’m open to roles in operational reporting, account operations, and project management. References are available on request.</p>
+      <a class="btn primary" href="mailto:acehry@gmail.com">Email me</a>
+    </section>
+  </main>
+  <footer>© 2026 April Jay Sitoy · Davao City, Philippines</footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  try{var s=localStorage.getItem("theme");if(s)root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var d=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+    var n=d?"light":"dark";root.setAttribute("data-theme",n);
+    try{localStorage.setItem("theme",n);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
